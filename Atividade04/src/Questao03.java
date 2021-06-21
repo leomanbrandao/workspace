@@ -5,7 +5,17 @@ public class Questao03 {
 	public static void main(String[] args) {
 		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um número qualquer"));
 		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite outro número qualquer"));
-		int diferenca = 0;
+		String numeros = "";
+		
+		for (int i = num1; i <= num2; i++)
+		{
+			numeros = numeros +i+ ", ";
+		}
+		JOptionPane.showMessageDialog(null, "Os números entre " +num1+ " e " +num2+ " são :" +numeros);
+		
+	}
+}
+		/*int diferenca = 0;
 		StringBuilder numeros = new StringBuilder();
 		if( num1 > num2)
 		{
@@ -36,8 +46,7 @@ public class Questao03 {
 				JOptionPane.showMessageDialog(null, " Você digitou números iguais");
 			}
 		
-		}
-}
+		}*/
 
 
 
